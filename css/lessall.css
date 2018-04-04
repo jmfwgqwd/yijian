@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+img {
+  border: none;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*导航栏*/
+}
+body a {
+  text-decoration: none;
+  color: #444;
+}
+body a:hover {
+  color: #999;
+}
+body nav {
+  position: fixed;
+  top: 0;
+}
+body nav .navbar-default {
+  border-color: red;
+  background: rgba(200, 200, 200, 0.5);
+}
+body nav .navbar-header .dl {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: gray;
+}
+body nav .navbar-header :hover {
+  cursor: pointer;
+}
+body nav .navbar-header input {
+  height: 75px;
+  width: 75px;
+  padding: 0;
+  border-radius: 40px;
+}
+body nav .navbar-header a {
+  padding: 0;
+  height: 75px;
+  float: left;
+}
+body nav .navbar-header a img {
+  height: 100%;
+  margin-top: 20px;
+}
+body .tuijian {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: right;
+}
+body .tuijian .tui1 {
+  height: 63px;
+}
+body .tuijian .tui1 h2,
+body .tuijian .tui1 a {
+  display: inline-block;
+}
+body .tuijian .tui1 h2 {
+  float: left;
+}
+body .tuijian .tui1 a {
+  float: right;
+}
+body .row {
+  display: inline-block;
+  text-align: center;
+}
+body .row .thumbnail img {
+  width: 80px;
+  border-radius: 50px;
+}
+body .row div {
+  display: inline-block;
+  max-width: 450px;
+}
+body #wrap {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+body #wrap div {
+  float: left;
+  box-sizing: border-box;
+  width: 280px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(200, 200, 200, 0.5);
+}
+body #wrap div img {
+  width: 260px;
+  margin: 0 auto;
+}
+body #wrap div a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+}
+body .go-top {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #666666 url(../images/icon-go-up.png) center no-repeat;
+}
+@media (max-width: 992px) {
+  body {
+    background-image: url(../images/bodyback.jpg);
+  }
+  .col-sm-6 {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-image: url(../images/bodyback2.jpg);
+  }
+  #wrap {
+    margin: 500px auto;
+  }
+}
+@media (min-width: 768px) {
+  .nav .yhm {
+    display: none;
+  }
+}

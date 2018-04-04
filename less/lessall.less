@@ -1,0 +1,140 @@
+* { margin: 0; padding: 0; border: none; }
+img { border: none; }
+body { 
+	
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	a { text-decoration: none; color: #444; }
+	a:hover { color: #999; }
+
+	/*导航栏*/
+	nav{
+		position: fixed;
+		top:0;
+		.navbar-default {
+			border-color: red; 
+			background: rgba(200,200,200,0.5); 
+		}
+		.navbar-header{
+			.dl{
+				float: right;
+				margin-top: 25px;
+				margin-right: 10px;
+				font-size: 16px;
+				font-family: sans-serif;
+				font-weight: bolder;
+				color: gray;
+			}
+			:hover{
+				cursor:pointer; 
+			}
+			input{
+				height: 75px;
+				width: 75px;
+				padding: 0;
+				border-radius: 40px;
+			}
+			a{
+				padding: 0;
+				height:75px;
+				float: left;
+				img{
+					height: 100%;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.tuijian{
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: right;
+		.tui1{
+			height: 63px;
+			h2,a{
+				display: inline-block;
+			}
+			h2{
+				float: left;
+			}
+			a{
+				float: right;
+			}
+		}
+	}
+	.row{
+		display: inline-block;
+		text-align: center;
+		.thumbnail{
+			img{
+				width: 80px;
+				border-radius: 50px;
+			}
+		}
+		div{
+			display: inline-block;
+			max-width: 450px;
+		}
+	}
+	#wrap { 
+		position: relative; 
+		width: auto; 
+		height: auto; 
+		div { 
+			float: left; 
+			box-sizing: border-box; 
+			width: 280px; 
+			height: auto; 
+			margin: 10px; 
+			padding: 10px; 
+			border-radius: 5px; 
+			background: rgba(200,200,200,0.5); 
+			img { width: 260px; 
+				margin: 0 auto; 
+			}
+			a { 
+				display: block; 
+				font-size: 18px; 
+				font-weight: bold; 
+				line-height: 40px; 
+				text-align: center; 
+			}
+		}
+
+	}
+	.go-top {
+		display: block;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+		z-index: 9;
+		width: 40px;
+		height: 40px;
+		color: #fff;
+		background: #666666 url(../images/icon-go-up.png) center no-repeat;
+	}
+}
+
+@media (max-width: 992px){
+	body{
+		background-image: url(../images/bodyback.jpg);
+	}
+	.col-sm-6 {
+		display:none;
+	}
+}
+@media (min-width: 992px){
+	body{
+			background-image: url(../images/bodyback2.jpg);
+		}
+	#wrap{
+		margin: 500px auto;
+	}
+}
+@media (min-width: 768px){
+	.nav{
+		.yhm{
+			display: none;
+		}
+	}
+}

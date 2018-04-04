@@ -1,3 +1,3 @@
 # yijian
 一见app
-[demo](http://jmfwgqwd/index.html)
+[demo]( https://jmfwgqwd.github.io/yijian/)

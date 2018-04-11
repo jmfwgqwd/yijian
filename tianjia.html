@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>一见home_一键，一见不同的风景</title>
+
+
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+	@media (min-width: 768px){
+		.footer{
+			display: none;
+		}
+	}
+	@media (max-width: 768px){
+		.footer{
+			width: 100%;
+			height: 50px;
+			background: rgba(200,200,200,0.5);
+			position: fixed;
+			bottom: 0;
+			z-index: 9999;
+		}
+		.header{
+			width: 100%;
+			height: 50px;
+			background: rgba(200,200,200,0.5);
+			position: fixed;
+			top: 0;
+			z-index: 9999;
+			text-align: center;
+		}
+		a span{
+			width: 100%;
+			height: 100%;
+			font-size: 25px;
+			color: black;
+		}
+		a img{
+			width: 44px;
+		}
+		.a span{
+			color: white;
+		}
+		.content{
+			margin-top: 55px;
+		}
+		.top .thumbnail{
+			padding-top: 20px;
+			padding-bottom: 30px;
+			background: white;
+		}
+		.content .top img{
+			width: 65px;
+			padding: 5px;
+			border: 3px solid gray;
+			border-radius: 20px;
+			float: left;
+			margin-bottom: 20px；
+		}
+		.content .top p{
+			float: right;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h3>发现用户</h3>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12 top">
+				<div class="thumbnail">
+					<img src="images/zhu.gif" alt="...">
+					<div class="caption">
+						<h4>&nbsp;&nbsp;关注一位一见的好友</h4>
+						<p><a href="#" class="btn btn-primary" role="button">全部关注</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer btn-group btn-group-justified" role="group" aria-label="...">
+		<a class="btn a" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a class="btn" href=""><span class="glyphicon glyphicon-search"></span></a>
+		<a class="btn" href="index.html"><img src="images/zhu.gif" alt=""></a>
+		<a class="btn" href=""><span class="glyphicon glyphicon-heart-empty"></span></a>
+		<a class="btn" href="self.html"><span class="glyphicon glyphicon-user"></span></a>
+	</div>
+</body>
+</html>

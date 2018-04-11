@@ -3,11 +3,101 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+	.back{
+		margin: 25px;
+	}
+	.back a{
+		display: block;
+		width: 30px;
+		height: 30px;
+	}
+	.back a img{
+		width: 100%;
+		height: 100%;
+	}
+	.self{
+		width: 260px;
+		height:400px;
+		margin: auto auto;
+		margin-top: 30px;
+	}
+	.self .img{
+		width: 100px;
+		height: 100px;
+		margin:0 auto; 
+		padding-bottom: 100px;
+		margin-bottom: -70px;
+	}
+	.self .img img{
+		width: 100%;
+		border-radius:100px;
+		margin-left: -15px;
+		border: 15px solid rgba(200,200,200,0.5);
+		padding-bottom: 55px;
+	}
+	.info{
+		margin-top: 45px;
+	}
+	.info div { 
+		margin: 20px;
+	} 
+	.info div input{
+		border-color: rgba(200,200,200,0.5);
+	}
+	.baocun{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.baocun button{
+		color: rgba(200,200,200,0.5);
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		font-size: 30px;
+		cursor:pointer ;
+	}
+	.p{
+		width: 100%;
+		height: 20px;
+	}
+	p{
+		display: block;
+		width: 70px;
+		margin:0 auto;
+	}
+</style>
 
- 	<h1>跳转过来</h1>
 
 </head>
 <body>
-	
+	<div class="wrap">
+		<div class="back">
+			<a href="index.html">
+				<img src="images/hui.gif">
+			</a>
+		</div>
+		<div class="self">
+			<div class="img">
+				<img src="images/avatar.jpg">
+			</div>
+			<div class="p"><p>个人信息</p></div>
+			
+			<div class="info">
+				<div>Name:<input type="text" placeholder="Please enter name" name="username"/><br></div>
+				<div>Age:<input type="text" placeholder="Please enter age" name="username"/><br></div>
+				<div>Hobbies:<input type="text" placeholder="Please enter hobbies" name="username"/><br></div>
+				<div>Address:<input type="text" placeholder="Please enter address" name="username"/><br></div>
+				<div>Signature:<input type="text" placeholder="Please enter signature" name="username"/><br></div>
+			</div>
+		</div>
+		<div class="baocun">
+			<a href="index.html">
+			<button>SAVE</button>
+			</a>
+		</div>
+	</div>
 </body>
 </html>

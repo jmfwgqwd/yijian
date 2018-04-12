@@ -141,7 +141,7 @@ body .go-top {
     text-align: center;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 374px) {
   body {
     background-image: url(../images/bodyback3.jpg);
     background-repeat: no-repeat;
@@ -193,7 +193,78 @@ body .go-top {
   #wrap div {
     float: left;
     box-sizing: border-box;
-    width: 105px;
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    border-radius: 0px;
+    background: rgba(200, 200, 200, 0.5);
+  }
+  #wrap div img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #wrap div a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 374px) {
+  body {
+    background-image: url(../images/bodyback3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .navbar-header .navbar-brand {
+    padding: 0;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+  }
+  .navbar-header .navbar-brand img {
+    height: 100%;
+    margin-top: 0px;
+  }
+  .touxiang {
+    height: 65px;
+    width: 65px;
+    padding: 0;
+    margin: 5px 30px 5px 0;
+    float: right;
+  }
+  .touxiang img {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .dl {
+    float: right;
+    margin-top: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: gray;
+  }
+  :hover {
+    cursor: pointer;
+  }
+  .col-sm-6 {
+    display: none;
+  }
+  #wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 14px;
+  }
+  #wrap div {
+    float: left;
+    box-sizing: border-box;
+    width: 100px;
     height: auto;
     margin: 5px;
     padding: 0px;

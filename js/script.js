@@ -7,7 +7,7 @@ window.onload = function() {
 
     //模拟数据
     var data = [{
-        "src": "1.gif",
+        "src": "1.jpg",
         "title": "1"
     }, {
         "src": "2.jpg",
@@ -43,7 +43,7 @@ window.onload = function() {
         "src": "12.jpg",
         "title": "12"
     }, {
-        "src": "13.gif",
+        "src": "13.jpg",
         "title": "13"
     }, {
         "src": "14.jpg",
@@ -58,7 +58,7 @@ window.onload = function() {
         "src": "17.jpg",
         "title": "17"
     }, {
-        "src": "18.gif",
+        "src": "18.jpg",
         "title": "18"
     }];
 

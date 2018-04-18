@@ -141,7 +141,7 @@ body .go-top {
     text-align: center;
   }
 }
-@media (min-width: 374px) {
+@media (max-width: 992px) {
   body {
     background-image: url(../images/bodyback3.jpg);
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ body .go-top {
     width: 100%;
     height: auto;
     display: block;
-    margin-left: 12px;
+    margin-left: 20px;
   }
   #wrap div {
     float: left;

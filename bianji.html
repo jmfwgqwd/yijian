@@ -23,6 +23,19 @@
 		bottom: 0;
 		z-index: 9999;
 	}
+	.top {
+		display: inline-block;
+		width:100%;
+		margin-top:100px;
+		margin-left: 50px;
+	}
+	.img-circle{
+		width: 120px;
+	}
+	.top p{
+		display: inline-block;
+		width:150px;
+	}
 	a{
 		text-decoration: none;
 		color: #444;
@@ -39,64 +52,46 @@
 	.footer img{
 		height: 45px;
 	}
-	.top {
-		display: inline-block;
-		width:100%;
-		margin-top:100px;
-		margin-left: 50px;
-	}
-	.img-circle{
-		width: 120px;
-	}
-	.top p,button{
-		display: inline-block;
-		width:150px;
-	}
-	.top p{
-		font-size: 24px;
-		color: gray;
-	}
-	.wrap {
-		margin-left: 50px;
-	}
-	.wrap p{
-		font-size: 18px;
-		color: gray;
-	}
-	.sex{
-		display: inline-block;
-		width: 100px;
-	}
-	.foot p{
-		font-size: 14px;
-		margin-left: 50px;
+	.input-group{
+		width: 200px;
+		margin-top: 15px;
 	}
 </style>
-
-</head>
 <body>
 	<div class="header">
-		<h3>个人信息</h3>
+		<h3>编辑</h3>
 	</div>
 	<div class="top">
 		<img src="images/avatar.jpg" alt="" class="img-circle">
+	    <input type="file">
 
-		<p>yonghu</p >
-		<button class="bianji" onclick="login()">编辑个人信息</button>
-	</div>
-	<hr>
-	<div class="wrap">
-		<p class="sex">姓:yong</p >
-		<p class="sex">名:hu</p >
-		<p>性别:女</p >
-		<p>住址:新西兰</p >
-		<p>星座:黑羊座</p >
-		<p>个性签名:I will be naver pure</p >
-	</div>
-	<hr>
-	<div class="foot">
-		<p>私人信息</p >
-		<p>邮箱:123456789@123.com</p >
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">姓</span>
+			<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">名</span>
+			<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+		</div>
+		<br>
+		<p>性别</p>
+		<br>
+		<input type="radio" name="aaa" value="选项一">男 &nbsp;
+		<input type="radio" name="aaa" value="选项二">女 &nbsp;
+		<input type="radio" name="aaa" value="选项三">跨性别者 
+		<br>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">住址</span>
+			<input type="text" class="form-control" placeholder="Address" aria-describedby="sizing-addon2">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">星座</span>
+			<input type="text" class="form-control" placeholder="Constellation" aria-describedby="sizing-addon2">
+		</div>
+		<div class="input-group">
+			<span class="input-group-addon" id="sizing-addon2">个性签名</span>
+			<input type="text" class="form-control" placeholder="Say Something" aria-describedby="sizing-addon2">
+		</div>
 	</div>
 	<div class="footer btn-group btn-group-justified" role="group" aria-label="...">
 		<a class="btn" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
@@ -105,11 +100,6 @@
 		<a class="btn" href="dongtai.html"><span class="glyphicon glyphicon-heart-empty"></span></a>
 		<a class="btn a" href="self.html"><span class="glyphicon glyphicon-user"></span></a>
 	</div>
-	<script>  
-		function login() {  
-			window.location.href="bianji.html";  
-		}  
-	</script>
 	<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>

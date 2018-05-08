@@ -1,7 +1,7 @@
 window.onload = function() {
-	//获得外层以及每一个盒子
-	var container = document.getElementById('wrap');
-	var boxes = container.getElementsByTagName('div');
+    //获得外层以及每一个盒子
+    var container = document.getElementById('wrap');
+    var boxes = container.getElementsByTagName('div');
     //运行瀑布流主函数
     waterfall(container, boxes);
 
@@ -90,11 +90,11 @@ window.onload = function() {
 
 // 瀑布流主函数
 function waterfall(wrap, figures) {
-    //	获得屏幕可显示的列数
+    //  获得屏幕可显示的列数
     var figureW = figures[0].offsetWidth + 20;
     var colsNum = Math.floor(document.documentElement.clientWidth / figureW);
     wrap.style.width = figureW * colsNum + 'px'; //为外层赋值宽度
-    //	循环出所有的figure并按照瀑布流排列
+    //  循环出所有的figure并按照瀑布流排列
     var everyH = []; //定义一个数组存储每一列的高度
     for (var i = 0; i < figures.length; i++) {
         if (i < colsNum) {

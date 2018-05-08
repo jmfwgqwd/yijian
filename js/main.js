@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
 
 //首页切换效果
 	$("#count1").dayuwscroll({

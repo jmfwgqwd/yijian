@@ -56,6 +56,11 @@
 		width: 200px;
 		margin-top: 15px;
 	}
+	.btn-primary{
+		margin-top: 20px;
+		margin-left: 50px;
+		margin-bottom: 150px;
+	}
 </style>
 <body>
 	<div class="header">
@@ -92,6 +97,7 @@
 			<span class="input-group-addon" id="sizing-addon2">个性签名</span>
 			<input type="text" class="form-control" placeholder="Say Something" aria-describedby="sizing-addon2">
 		</div>
+		<button type="button" class="btn btn-primary btn-lg" onclick="login()">保存</button>
 	</div>
 	<div class="footer btn-group btn-group-justified" role="group" aria-label="...">
 		<a class="btn" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
@@ -100,6 +106,11 @@
 		<a class="btn" href="dongtai.html"><span class="glyphicon glyphicon-heart-empty"></span></a>
 		<a class="btn a" href="self.html"><span class="glyphicon glyphicon-user"></span></a>
 	</div>
+	<script>  
+		function login() {  
+			window.location.href="index.html";  
+		}  
+	</script>
 	<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>

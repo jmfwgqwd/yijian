@@ -544,7 +544,7 @@ white-space: nowrap;">你的快拍</div>
 <div class="">
 	<section class="">
 		<div class="zan">
-			<span class="glyphicon glyphicon-thumbs-up" style="font-size: 20px;margin: 5px;">赞
+			<span class="glyphicon glyphicon-thumbs-up" onclick="login()" id="66x" style="font-size: 20px;margin: 5px;color="">赞
 			</span>
 		</div>
 		<span class="ping glyphicon glyphicon-comment" style="float: right;">评论&nbsp;
@@ -555,7 +555,7 @@ white-space: nowrap;">你的快拍</div>
 	<section class="">
 		<div class="">
 			<a class="" href="" style="height: 30px;">
-				<span>666,6
+				<span id="67x">666,6
 				</span> 次赞
 			</a>
 		</div>
@@ -754,6 +754,12 @@ white-space: nowrap;">你的快拍</div>
 	<a class="btn" href="dongtai.html"><span class="glyphicon glyphicon-heart-empty"></span></a>
 	<a class="btn" href="self.html"><span class="glyphicon glyphicon-user"></span></a>
 </div>
+<script>  
+		function login() {  
+			document.getElementById('66x').style.color="red";
+			document.getElementById('67x').innerHTML="666,7";
+		}  
+	</script>
 <script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>

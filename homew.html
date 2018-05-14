@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>一见home_一键，一见不同的风景</title>
+
+
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+	@media (min-width: 768px){
+		.footer{
+			display: none;
+		}
+	}
+	@media (max-width: 768px){
+		.footer{
+			width: 100%;
+			height: 50px;
+			background: rgba(200,200,200,0.5);
+			position: fixed;
+			bottom: 0;
+			z-index: 9999;
+		}
+		.header{
+			width: 100%;
+			height: 50px;
+			background: rgba(200,200,200,0.5);
+			position: fixed;
+			top: 0;
+			z-index: 9999;
+		}
+		.left{
+			float: left;
+			margin: 12px;
+		}
+		.right{
+			float: right;
+			margin:000 12px;
+		}
+		.b{
+			font-size: 15px;
+			width: 15px;
+			display: inline-block;
+		}
+		.c{
+			display: inline-block;
+			width: 25px;
+			margin-top: 10px;
+		}
+		.int{
+			margin-left: 50px;
+			width: 180px;
+		}
+		a span{
+			width: 100%;
+			height: 100%;
+			font-size: 25px;
+			color: black;
+		}
+		a img{
+			width: 44px;
+		}
+		.a span{
+			color: white;
+		}
+		.con{
+			margin-top: 200px;
+			width: 100%;
+			text-align: center;
+		}
+		.co{
+			display: block;
+			margin: 0 auto;
+			width: 200px;
+			height: 200px;
+			border-radius: 250px;
+			border:5px solid #aaa;
+			text-align: center;
+		}
+		.co p{
+			font-size: 130px;
+			color: #aaa;
+		}
+		.zo{
+			width: 100%;
+			text-align: center;
+			margin-top: 25px;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<a href="" class="left"><span class="glyphicon glyphicon-picture"></span></a>
+		<img class="int" src="images/logo1-b.gif">
+		<a class="right" href="tianjia.html"><span class="b glyphicon glyphicon-plus"></span><span class="c glyphicon glyphicon-user"></span></a>
+	</div>
+	<div class="con">
+		<div class="co">
+			<p>空</p>
+		</div>
+	</div>
+	<div class="zo">
+		请先登录：
+	</div>
+	<div class="zo">
+		<button type="button" class="btn btn-primary btn-lg" onclick="login()">登录</button>
+	</div>
+	<div class="footer btn-group btn-group-justified" role="group" aria-label="...">
+		<a class="btn a" href="homew.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a class="btn" href="searchw.html"><span class="glyphicon glyphicon-search"></span></a>
+		<a class="btn" href="index.html"><img src="images/zhu.gif" alt=""></a>
+		<a class="btn" href="dongtaiw.html"><span class="glyphicon glyphicon-heart-empty"></span></a>
+		<a class="btn" href="dorz.html"><span class="glyphicon glyphicon-user"></span></a>
+	</div>
+	<script>  
+		function login() {  
+			window.location.href="dorz.html";  
+		}     
+	</script> 
+
+</script>
+<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

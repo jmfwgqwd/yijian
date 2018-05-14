@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">	
+	.footer{
+		width: 100%;
+		height: 50px;
+		background: rgba(200,200,200,0.5);
+		position: fixed;
+		bottom: 0;
+		z-index: 1003;
+	}
+	.header{
+		width: 100%;
+		height: 50px;
+		background: rgba(200,200,200,0.5);
+		position: fixed;
+		top: 0;
+		z-index: 1003;
+		text-align: center;
+	}
+	.footer img{
+		height: 45px;
+	}
+	a{
+		text-decoration: none;
+		color: #444;
+	}
+	a span{
+		width: 100%;
+		height: 100%;
+		font-size: 25px;
+		color: black;
+	}
+	.a span{
+		color: white;
+	}
+	.img{
+		margin-top: 95px;
+		width: 100%;
+		padding-left: 50%;
+	}
+	.img img{
+		margin-left: -32px;
+		width: 75px;
+	}
+	.wrap{
+		margin-top: 20px;
+	}
+	.yb{
+		margin-top: 20px;
+		width: 100%;
+		padding: 10px; 
+		text-align: center;
+	}
+	.wrap{
+		width: 100%;
+		text-align: center;
+	}
+	.wrap a{
+		margin:25px;
+		display: block;
+		font-size: 25px;
+		border: 1px solid gray;
+		text-decoration:none;
+	}
+	a:hover{
+		background: #aaa;
+	}
+	.wrap img{
+		width: 25px;
+		border-radius: 5px;
+	}
+	.mask {       
+		position: absolute; top: 0px; 
+		filter: alpha(opacity=60); 
+		background-color: #777;     
+		z-index: 1002; 
+		left: 0px;     
+		opacity:0.5; 
+		-moz-opacity:0.5;     
+	}  
+	#nr{
+		position: absolute;
+		width: 25rem;
+		height: 25rem;
+		margin-left: 7rem;
+		z-index: 1004;
+		display: none;
+		border: 1px solid #aaa;
+		border-radius: 3rem;
+		background-color: white;
+		padding:2rem; 
+	}
+	.nnn{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+	<div id="mask" class="mask"></div>
+	<div id="nr" class="nr">
+		<div class="nnn">
+			<h3>注册</h3>
+			<div class="input-group input-group-lg">
+				<span class="input-group-addon" id="sizing-addon1">账号</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+			</div>
+			<div class="input-group input-group-lg" style="margin-top: 1rem;">
+				<span class="input-group-addon" id="sizing-addon1">密码</span>
+				<input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+			</div>
+			<div class="btn-group" role="group" aria-label="..." style="margin-top: 1rem;">
+				<button type="button" class="btn btn-default" onclick="login()">注册</button>
+				<button type="button" class="btn btn-default">or</button>
+				<button type="button" class="btn btn-default" onclick="hideMask()">取消</button>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<a href="index.html" style="display: inline-block;float: left;margin: 10px;"><span class="glyphicon glyphicon-chevron-left"></span></style></a>
+		<h3 style="display: inline-block;">登录or注册</h3>
+	</div>
+	<div class="img">
+		<img src="images/wz.gif">
+	</div>
+	<div class="yb">
+		<h4>请选择登录方式：</h4>
+	</div>
+	
+	<div class="wrap">
+		<a onclick="showMask()"><img src="images/wx.png">微信登录</a>
+		<a onclick="showMask()"><img src="images/qq.png">QQ登录</a>
+		<a onclick="showMask()"><img src="images/wb.png">微博登录</a>
+	</div>
+	<div class="yb">
+		<a style="color: red; cursor:pointer;">注册一见账号</a>
+	</div>
+	
+	<div class="footer btn-group btn-group-justified" role="group" aria-label="...">
+		<a class="btn" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
+		<a class="btn" href="search.html"><span class="glyphicon glyphicon-search"></span></a>
+		<a class="btn" href="index.html"><img src="images/zhu.gif" alt=""></a>
+		<a class="btn" href="dongtai.html"><span class="glyphicon glyphicon-heart-empty"></span></a>
+		<a class="btn a" href="self.html"><span class="glyphicon glyphicon-user"></span></a>
+	</div>
+	<script>  
+		function showMask(){     
+			$("#mask").css("height",$(document).height());     
+			$("#mask").css("width",$(document).width());     
+			$("#mask").show();   
+			$("#nr").show();   
+		}  
+		function hideMask(){     
+			$("#mask").hide();    
+			$("#nr").hide(); 
+		}
+		function login() {  
+			window.location.href="bianji.html";  
+		}
+	</script>
+	<script src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

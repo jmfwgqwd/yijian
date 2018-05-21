@@ -52,8 +52,9 @@
 			margin-top: 10px;
 		}
 		.int{
-			margin-left: 50px;
-			width: 180px;
+			display: inline-block;
+			margin: 8px 0 0 70px;
+			width: 130px;
 		}
 		a span{
 			width: 100%;
@@ -97,7 +98,7 @@
 	<div class="header">
 		<a href="" class="left"><span class="glyphicon glyphicon-picture"></span></a>
 		<img class="int" src="images/logo1-b.gif">
-		<a class="right" href="tianjia.html"><span class="b glyphicon glyphicon-plus"></span><span class="c glyphicon glyphicon-user"></span></a>
+		<a id="right" class="right" href="" onclick="oooof()"><span class="b glyphicon glyphicon-plus"></span><span class="c glyphicon glyphicon-user"></span></a>
 	</div>
 	<div class="con">
 		<div class="co">
@@ -120,7 +121,10 @@
 	<script>  
 		function login() {  
 			window.location.href="dorz.html";  
-		}     
+		}
+		function oooof() {
+			window.location.href="dorz.html";
+		}
 	</script> 
 
 </script>
